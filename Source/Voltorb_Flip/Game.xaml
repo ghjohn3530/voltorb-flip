@@ -1,0 +1,178 @@
+﻿<Window x:Name="Game_Window" x:Class="Voltorb_Flip.Game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Voltorb_Flip"
+        mc:Ignorable="d"
+        Title="Voltorb Flip" Height="450" Width="800" MinWidth="800" MinHeight="450">
+    <Border Padding="30">
+        <Grid Name="MainGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.04*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0">
+                <Grid Name="GameGrid">
+                    <Grid.Background>
+                        <ImageBrush/>
+                    </Grid.Background>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="0.75*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.75*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Column="0" Grid.Row="1" Name="B_A0" Click="B_A0_Click"/>
+                    <Button Grid.Column="1" Grid.Row="1" Name="B_B0" Click="B_B0_Click"/>
+                    <Button Grid.Column="2" Grid.Row="1" Name="B_C0" Click="B_C0_Click"/>
+                    <Button Grid.Column="3" Grid.Row="1" Name="B_D0" Click="B_D0_Click"/>
+                    <Button Grid.Column="4" Grid.Row="1" Name="B_E0" Click="B_E0_Click"/>
+
+                    <Button Grid.Column="0" Grid.Row="2" Name="B_A1" Click="B_A1_Click"/>
+                    <Button Grid.Column="1" Grid.Row="2" Name="B_B1" Click="B_B1_Click"/>
+                    <Button Grid.Column="2" Grid.Row="2" Name="B_C1" Click="B_C1_Click"/>
+                    <Button Grid.Column="3" Grid.Row="2" Name="B_D1" Click="B_D1_Click"/>
+                    <Button Grid.Column="4" Grid.Row="2" Name="B_E1" Click="B_E1_Click"/>
+
+                    <Button Grid.Column="0" Grid.Row="3" Name="B_A2" Click="B_A2_Click"/>
+                    <Button Grid.Column="1" Grid.Row="3" Name="B_B2" Click="B_B2_Click"/>
+                    <Button Grid.Column="2" Grid.Row="3" Name="B_C2" Click="B_C2_Click"/>
+                    <Button Grid.Column="3" Grid.Row="3" Name="B_D2" Click="B_D2_Click"/>
+                    <Button Grid.Column="4" Grid.Row="3" Name="B_E2" Click="B_E2_Click"/>
+
+                    <Button Grid.Column="0" Grid.Row="4" Name="B_A3" Click="B_A3_Click"/>
+                    <Button Grid.Column="1" Grid.Row="4" Name="B_B3" Click="B_B3_Click"/>
+                    <Button Grid.Column="2" Grid.Row="4" Name="B_C3" Click="B_C3_Click"/>
+                    <Button Grid.Column="3" Grid.Row="4" Name="B_D3" Click="B_D3_Click"/>
+                    <Button Grid.Column="4" Grid.Row="4" Name="B_E3" Click="B_E3_Click"/>
+
+                    <Button Grid.Column="0" Grid.Row="5" Name="B_A4" Click="B_A4_Click"/>
+                    <Button Grid.Column="1" Grid.Row="5" Name="B_B4" Click="B_B4_Click"/>
+                    <Button Grid.Column="2" Grid.Row="5" Name="B_C4" Click="B_C4_Click"/>
+                    <Button Grid.Column="3" Grid.Row="5" Name="B_D4" Click="B_D4_Click"/>
+                    <Button Grid.Column="4" Grid.Row="5" Name="B_E4" Click="B_E4_Click"/>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label Name="L_N00" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas"/>
+                        <Label Name="L_V00" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="Red"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="1">
+                        <Label Name="L_N01" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas"/>
+                        <Label Name="L_V01" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="Red"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="2">
+                        <Label Name="L_N02" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas"/>
+                        <Label Name="L_V02" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="Red"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="3">
+                        <Label Name="L_N03" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas"/>
+                        <Label Name="L_V03" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="Red"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Column="4">
+                        <Label Name="L_N04" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas"/>
+                        <Label Name="L_V04" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="Red"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="5" Grid.Row="1">
+                        <Label Name="L_N10" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas"/>
+                        <Label Name="L_V10" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="Red"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="5" Grid.Row="2">
+                        <Label Name="L_N11" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas"/>
+                        <Label Name="L_V11" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="Red"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="5" Grid.Row="3">
+                        <Label Name="L_N12" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas"/>
+                        <Label Name="L_V12" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="Red"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="5" Grid.Row="4">
+                        <Label Name="L_N13" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas"/>
+                        <Label Name="L_V13" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="Red"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="5" Grid.Row="5">
+                        <Label Name="L_N14" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas"/>
+                        <Label Name="L_V14" Content="0" VerticalAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="Red"/>
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+            <Border Grid.Column="2">
+                <Grid Name="SideGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.6*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Viewbox>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label Name="L_CoinTotal" Content="TOTAL COINS:     00000" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Consolas" FontSize="24"/>
+                            <Label Name="L_CoinCurrent" Content="CURRENT COINS:   00000" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Consolas" FontSize="24" Grid.Row="1"/>
+                        </Grid>
+                    </Viewbox>
+
+                    <Border Grid.Row="1" Padding="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="0.2*"/>
+                                <ColumnDefinition Width="1.8*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Button Name="B_0Marking" Content="O" Click="B_0Marking_Click"/>
+                                <Button Name="B_2Marking" Content="2" Grid.Row="1" Click="B_2Marking_Click"/>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Button Name="B_1Marking" Content="1" Padding="5" Click="B_1Marking_Click"/>
+                                <Button Name="B_3Marking" Content="3" Padding="5" Grid.Row="1" Click="B_3Marking_Click"/>
+                            </Grid>
+
+                            <Button Name="B_Flip" Content="FLIP" Grid.Column="3" FontFamily="Consolas" FontSize="36" Click="B_Flip_Click"/>
+
+                        </Grid>
+                    </Border>
+
+                    <Border Padding="20" Grid.Row="2">
+                        <Grid>
+                            <StackPanel>
+                                <Button Name="B_CashCoins" Content="CASH IN" FontFamily="Consolas" FontSize="20" Click="B_CashCoins_Click"/>
+                                <TextBlock/> 
+                                <Button Name="B_NewGame" Content="NEW GAME" FontSize="20" FontFamily="Consolas" Click="B_NewGame_Click"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
